@@ -23,6 +23,11 @@ namespace Smart_home.Controllers
             return View();
         }
 
+        public IActionResult Control()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

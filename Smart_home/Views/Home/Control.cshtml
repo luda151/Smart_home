@@ -1,11 +1,12 @@
-﻿@model Smart_home.Models.ReleModel
-@{
+﻿@{
     ViewData["Title"] = "Control";
 }
     <html>
         <head>
-        <link rel="stylesheet" href="~/css/site.css" />
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+            <environment>
+        <link rel="stylesheet" href="~/css/site.css"/>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+            </environment>
         </head>
         <body>
             <h1>Control</h1>
@@ -24,7 +25,5 @@
             <script src="~/js/site.js" asp-append-version="true"></script>
         </body>
     </html>
-    @section Scripts {
-        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    }
+    
 

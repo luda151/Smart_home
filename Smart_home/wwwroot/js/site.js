@@ -4,9 +4,9 @@
 // Write your JavaScript code.
 
 
-    function myFunction() {
+  function myFunction() {
   var checkBox = document.getElementById("myCheck");
-    var text = document.getElementById("text");
+  var text = document.getElementById("text");
   if (checkBox.checked == true){
         text.style.display = "block";
   } else {

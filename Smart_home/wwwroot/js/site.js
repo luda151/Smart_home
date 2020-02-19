@@ -3,7 +3,7 @@
 
 // Write your JavaScript code.
 
-<script>
+
     function myFunction() {
   var checkBox = document.getElementById("myCheck");
     var text = document.getElementById("text");
@@ -13,4 +13,3 @@
         text.style.display = "none";
  }
 }
-</script>

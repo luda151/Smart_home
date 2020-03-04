@@ -105,3 +105,7 @@ C:\Git\Personal\Smart_home\Smart_home\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.
 C:\Git\Personal\Smart_home\Smart_home\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Git\Personal\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Smart_home.MvcApplicationPartsAssemblyInfo.cache
 C:\Git\Personal\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Razor\Views\Home\Control.cshtml.g.cs
+C:\Git\Personal\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Razor\Views\Home\Zahradnicek.cshtml.g.cs
+C:\Git\Personal\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Razor\Views\Home\Zvonek.cshtml.g.cs
+C:\Git\Personal\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Razor\Views\Home\zabezpeceni.cshtml.g.cs
+C:\Git\Personal\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Razor\Views\Home\teplota.cshtml.g.cs

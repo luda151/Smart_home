@@ -5,9 +5,58 @@
 
 <h1>teplota</h1>
 
-Zobrazeni poslední venkovní teploty
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Místnost
+            </th>
+            <th>
+                Aktuální teplota  
+            </th>
+            <th>
+                Nastavení teploty
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    Koupelna
+                </td>
+                <td>
+                    25°
+                </td>
+                <td>
+                    <input type="text" id="fname" name="fname">
+                </td>
+                <td>
+                    @Html.ActionLink("Update", "Update", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+@*Zobrazeni poslední venkovní teploty
 
 teplloty jednotlivých místností
 + tabulky pro nastaveni  aktuálních hodnot například 15 min topeni v kuchyni 100%
 + časový plán
-+ nastavení časového teplotního plánu
++ nastavení časového teplotního plánu*@

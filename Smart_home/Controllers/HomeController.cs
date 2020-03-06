@@ -28,6 +28,11 @@ namespace Smart_home.Controllers
             return View();
         }
 
+        public IActionResult Teplota()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

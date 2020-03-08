@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MvcMovies.Models.TeplotaModel>
+﻿@model IEnumerable<Smart_home.Models.TeplotaModel>
 @{
     ViewData["Title"] = "teplota";
 }
@@ -10,6 +10,9 @@
         <tr>
             <th>
                 Id
+            </th>
+            <th>
+                Nazev
             </th>
             <th>
                 Místnost
@@ -26,24 +29,27 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Id)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Nazev)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Nazev)
-                </td>
-                <td>
-                    <input type="text" id="fname" name="fname">
-                </td>
-                <td>
-                    @Html.ActionLink("Update", "Update", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                </td>
-            </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NazevTeplomeru)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MistoTeplomeru)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PosledniTeplota)
+            </td>
+            <td>
+                <input type="text" id="fname" name="fname">
+            </td>
+            <td>
+                @Html.ActionLink("Update", "Update", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
         }
     </tbody>
 </table>

@@ -9,8 +9,8 @@ namespace Smart_home.Models
     {
         public int Id { get; set; }
         public int IdTeplomeru { get; set; }
-        public int NazevTeplomeru { get; set; }
-        public int MistoTeplomeru { get; set; }
+        public string NazevTeplomeru { get; set; }
+        public string MistoTeplomeru { get; set; }
         public int PosledniTeplota { get; set; }
         public DateTime DatumTeploty { get; set; }
         

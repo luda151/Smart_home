@@ -195,7 +195,6 @@ C:\git\Smart_home\Smart_home\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnaly
 C:\git\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Smart_home.csprojAssemblyReference.cache
 C:\git\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\staticwebassets\Smart_home.StaticWebAssets.Manifest.cache
 C:\git\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\staticwebassets\Smart_home.StaticWebAssets.xml
-C:\git\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Smart_home.MvcApplicationPartsAssemblyInfo.cache
 C:\git\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Smart_home.RazorAssemblyInfo.cache
 C:\git\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Smart_home.RazorAssemblyInfo.cs
 C:\git\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Smart_home.AssemblyInfoInputs.cache
@@ -222,3 +221,9 @@ C:\git\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Smart_home.Views.pdb
 C:\git\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Smart_home.csproj.CopyComplete
 C:\git\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Smart_home.dll
 C:\git\Smart_home\Smart_home\obj\Debug\netcoreapp3.1\Smart_home.pdb
+C:\git\Smart_home\Smart_home\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\git\Smart_home\Smart_home\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\git\Smart_home\Smart_home\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\git\Smart_home\Smart_home\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\git\Smart_home\Smart_home\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\git\Smart_home\Smart_home\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

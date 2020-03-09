@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Smart_home.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,3 +17,4 @@ namespace Smart_home.Models
         
     }
 }
+

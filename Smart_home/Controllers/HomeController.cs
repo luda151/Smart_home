@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Smart_home.Models;
+using static Smart_home.Models.SqlDotazy;
 
 namespace Smart_home.Controllers
 {
@@ -30,7 +31,17 @@ namespace Smart_home.Controllers
 
         public IActionResult Teplota()
         {
-            return View();
+            var data = LoadTeplota();
+            List<TeplotaModel> Teploty = new List<TeplotaModel>();
+
+            foreach (var row in data)
+            {
+                    Teploty.Add(new TeplotaModel
+                {
+                    Id = row.Id,
+                });
+            }
+            return View(Teploty);
         }
 
         public IActionResult Privacy()

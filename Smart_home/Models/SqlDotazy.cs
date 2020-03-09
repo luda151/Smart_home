@@ -13,7 +13,7 @@ namespace Smart_home.Models
     {
         public static string GetConnectionString(string connectionName = "Smart_home_Context")
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=db1;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Db;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             return connectionString;
             //return ConfigurationManager.ConnectionStrings[connectionName].ConnectionString;
         }
@@ -52,8 +52,10 @@ namespace Smart_home.Models
 
         public static List<TeplotaModel> LoadTeplota()
         {
-            string sql = @"select Id, Nazev, Rok, Zanr
-                          from dbo.Movies;";
+            string sql = @"SELECT Id, IdTeplomeru, Mistnost, Umisteni, Date, PosledniTeplota
+                          FROM dbo.Teploty
+                          LEFT JOIN dbo.Teplomery
+                          ON dbo.Teploty.IdTeplomeru = dbo.Teplomery.Id;";
             return LoadData<TeplotaModel>(sql);
         }
 

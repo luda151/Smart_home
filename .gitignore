@@ -7,3 +7,5 @@
 .vs/Smart_home/config/applicationhost.config
 .vs/Smart_home/DesignTimeBuild/.dtbcache
 .vs/Smart_home/DesignTimeBuild/.dtbcache
+*.ldf
+*.mdf

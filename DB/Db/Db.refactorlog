@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="fab1fb32-c38b-4cfd-8731-9ed2a0d383c8" ChangeDateTime="03/09/2020 18:34:34">
+    <Property Name="ElementName" Value="[dbo].[Teploty].[Hodnota]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Teploty]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[PosledniTeplota]" />
+  </Operation>
+</Operations>

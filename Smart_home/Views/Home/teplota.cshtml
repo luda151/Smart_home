@@ -3,14 +3,14 @@
     ViewData["Title"] = "teplota";
 }
 
-<h1>teplota</h1>
+<h1>teploměry</h1>
 
 <table class="table">
     <thead>
         <tr>
             @*<th>
-                Id
-            </th>*@
+                    Id
+                </th>*@
             <th>
                 Místnost
             </th>
@@ -29,30 +29,32 @@
     <tbody>
         @foreach (var item in Model)
         {
-        <tr>
-            @*<td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>*@
-            <td>
-                @Html.DisplayFor(modelItem => item.Mistnost)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Umisteni)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PosledniTeplota)
-            </td>
-            <td>
-                <input type="text" id="vstup1" name="teplota">
-            </td>
-            <td>
-                @Html.ActionLink("Update", "Update", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
+            <tr>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mistnost)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Umisteni)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PosledniTeplota)
+                </td>
+                <td>
+                    <input asp-for="NovaTeplota" type="text" id="vstup1" value="PosledniTeplota" name="teplota">
+                    <input type="submit" value="Potvrdit" class="button" />
+                </td>
+                <td>
+                    @Html.ActionLink("Update", "Update", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
         }
     </tbody>
 </table>
+
 
 
 

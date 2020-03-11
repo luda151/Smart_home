@@ -38,10 +38,11 @@ namespace Smart_home.Controllers
             {
                     Teploty.Add(new TeplotaModel
                 {
-                        Id = row.Id,
                         IdTeplomeru = row.IdTeplomeru,
                         Date = row.Date,
-                        PosledniTeplota = row.PosledniTeplota
+                        PosledniTeplota = row.PosledniTeplota,
+                        Mistnost = row.Mistnost,
+                        Umisteni = row.Umisteni
                     });
             }
             return View(Teploty);

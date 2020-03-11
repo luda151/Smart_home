@@ -2,6 +2,10 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 
+.button {
+    color: #33A3BA;
+}
+
 a.navbar-brand {
     white-space: normal;
     text-align: center;
@@ -101,15 +105,16 @@ input:checked + .slider:before {
     transition: opacity .2s;
 }
 
-    .sliderek:hover {
+.sliderek:hover {
         opacity: 1;
-    }
+}
 
-    .sliderek::-webkit-slider-thumb {
+.sliderek::-webkit-slider-thumb {
         -webkit-appearance: none;
         width: 25px;
         height: 25px;
         border-radius: 50%;
         background: #4CAF50;
         cursor: pointer;
-    }
+}
+

@@ -1,0 +1,13 @@
+11.03.2020 15:14:59	This log contains information about the import operation of the script 'dbo.Teploty.sql' into project 'Database_SH' on computer 'BULICEK-NB' by user'ludek.bulicek.
+11.03.2020 15:14:59	Started importing file: C:\Users\ludek.bulicek\AppData\Local\Temp\tmp7115.tmp 
+11.03.2020 15:14:59	File name C:\Users\ludek.bulicek\AppData\Local\Temp\tmp7115.tmp (size: 537)
+11.03.2020 15:14:59	Parsing import script
+11.03.2020 15:14:59	Total number of batches in script: 6
+11.03.2020 15:14:59	Total number of statements in script: 1
+11.03.2020 15:14:59	The script was successfully imported into the project.
+11.03.2020 15:14:59	Analyzing schema objects...
+11.03.2020 15:14:59	Scanning project for duplicate elements
+11.03.2020 15:15:00	Finished duplicate element processing
+11.03.2020 15:15:00	In the script that you provided to the import operation, one or more statements were not fully understood. These statements were moved to the ScriptsIgnoredOnImport.sql file. Review the file contents for additional information.
+11.03.2020 15:15:00	A summary of the import was saved to the following location: C:\Git\Personal\Smart_home\DB\Database_SH\Import Script Logs\dbo_Teploty_sql_20200311021459.log
+11.03.2020 15:15:00	Click Finish to continue...

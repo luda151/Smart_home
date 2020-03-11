@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\Smart_home\\Smart_home\\Smart_home.csproj": {}
+    "C:\\Git\\Personal\\Smart_home\\Smart_home\\Smart_home.csproj": {}
   },
   "projects": {
-    "C:\\git\\Smart_home\\Smart_home\\Smart_home.csproj": {
+    "C:\\Git\\Personal\\Smart_home\\Smart_home\\Smart_home.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\Smart_home\\Smart_home\\Smart_home.csproj",
+        "projectUniqueName": "C:\\Git\\Personal\\Smart_home\\Smart_home\\Smart_home.csproj",
         "projectName": "Smart_home",
-        "projectPath": "C:\\git\\Smart_home\\Smart_home\\Smart_home.csproj",
-        "packagesPath": "C:\\Users\\Luda-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\Smart_home\\Smart_home\\obj\\",
+        "projectPath": "C:\\Git\\Personal\\Smart_home\\Smart_home\\Smart_home.csproj",
+        "packagesPath": "C:\\Users\\ludek.bulicek\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\Personal\\Smart_home\\Smart_home\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Luda-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\ludek.bulicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

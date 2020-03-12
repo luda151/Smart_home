@@ -13,6 +13,7 @@ namespace Smart_home.Models
     {
         public static string GetConnectionString(string connectionName = "Smart_home_Context")
         {
+            //online conector string: server=192.168.1.150;uid=db7190;pwd=!VASEHESLO!;database=db7190
             string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Db;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             return connectionString;
             //return ConfigurationManager.ConnectionStrings[connectionName].ConnectionString;

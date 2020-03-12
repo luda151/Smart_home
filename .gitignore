@@ -9,3 +9,8 @@
 .vs/Smart_home/DesignTimeBuild/.dtbcache
 *.ldf
 *.mdf
+/DB/Database_SH/obj/Debug
+DB/Database_SH/Database_SH.jfm
+DB/Database_SH/Database_SH.dbmdl
+.vs/Smart_home/DesignTimeBuild/.dtbcache
+DB/Database_SH/Database_SH.dbmdl

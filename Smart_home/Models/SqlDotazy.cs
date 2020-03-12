@@ -53,7 +53,7 @@ namespace Smart_home.Models
 
         public static List<TeplotaModel> LoadTeplota()
         {
-            string sql = @"SELECT Id, IdTeplomeru, Mistnost, Umisteni, Date, PosledniTeplota
+            string sql = @"SELECT IdTeplomeru, Mistnost, Umisteni, Date, PosledniTeplota
                           FROM dbo.Teploty
                           LEFT JOIN dbo.Teplomery
                           ON dbo.Teploty.IdTeplomeru = dbo.Teplomery.Id;";

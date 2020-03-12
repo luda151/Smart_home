@@ -14,7 +14,9 @@ namespace Smart_home.Models
         public string Umisteni { get; set; }
         public int PosledniTeplota { get; set; }
         public DateTime Date { get; set; }
-        
+        public int NovaTeplota { get; set; }
     }
 }
+
+
 

@@ -23,6 +23,12 @@ namespace Smart_home.Controllers
         {
             return View();
         }
+        public IActionResult Check()
+        {
+            
+            return RedirectToAction("Index");
+        }
+
 
         public IActionResult Control()
         {
@@ -42,7 +48,8 @@ namespace Smart_home.Controllers
                         Date = row.Date,
                         PosledniTeplota = row.PosledniTeplota,
                         Mistnost = row.Mistnost,
-                        Umisteni = row.Umisteni
+                        Umisteni = row.Umisteni,
+                        NovaTeplota = row.NovaTeplota
                     });
             }
             return View(Teploty);

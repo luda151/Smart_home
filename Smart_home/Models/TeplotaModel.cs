@@ -12,9 +12,11 @@ namespace Smart_home.Models
         public int IdTeplomeru { get; set; }
         public string Mistnost { get; set; }
         public string Umisteni { get; set; }
+        public int NastavenaTeplota{ get; set; }
         public int PosledniTeplota { get; set; }
-        public DateTime Date { get; set; }
         public int NovaTeplota { get; set; }
+        public DateTime Date { get; set; }
+        
     }
 }
 

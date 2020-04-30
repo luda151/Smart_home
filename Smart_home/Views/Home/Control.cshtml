@@ -8,17 +8,44 @@
         </head>
         <body>
             <h1>Control</h1>
-            test
-            <hr />
-
-            <label class="switch">
-                <input type="checkbox" id="myCheck" onclick="myFunction()">
-                <span class="slider round"></span>
-            </label>
-            <p id="text" style="display:none">Checkbox is CHECKED!</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>název</th>
+                        <th>Stav</th>
+                        <th>On/Off</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ložnice</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" id="myCheck" onclick="myFunction()">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <p id="text" style="display:none">On</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Stropní světlo</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" id="myCheck" onclick="myFunction()">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <p id="text" style="display:none">On</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <hr />
             <div class="slidecontainer">
-                <input type="range" min="1" max="100" value="50" class="sliderek" id="myRange">
+                <input type="range" min="1" max="255" value="50" class="sliderek" id="myRange">
                 <p>Value: <span id="demo"></span></p>
             </div>
 

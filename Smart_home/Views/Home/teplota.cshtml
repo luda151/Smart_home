@@ -40,11 +40,11 @@
                     @Html.DisplayFor(modelItem => item.Umisteni)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.PosledniTeplota)
+                    @Html.DisplayFor(modelItem => item.NastavenaTeplota)
                 </td>
                 <td>
-                    <input asp-for="NovaTeplota" type="text" id="vstup1" value="PosledniTeplota" name="teplota">
-                    <input type="submit" value="Potvrdit" class="button" />
+                    <input type="text" id="vstup1" value="PosledniTeplota" name="teplota">
+                    <button name="button" value="button" asp-action="check">Potvrdit</button>
                 </td>
                 <td>
                     @Html.ActionLink("Update", "Update", new { /* id=item.PrimaryKey */ }) |

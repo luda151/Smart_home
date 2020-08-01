@@ -5,6 +5,59 @@
 
 <h1>Zahradnicek</h1>
 
+@*<table class="table">
+    <thead>
+        <tr>*@
+            @*<th>
+                    Id
+                </th>*@
+            @*<th>
+                Nazev
+            </th>
+            <th>
+                Zapnute
+            </th>
+            <th>
+                Aktivni
+            </th>
+            <th>
+                Nastavení teploty
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>*@
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>*@
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.Mistnost)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Umisteni)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PosledniTeplota)
+                </td>
+                <td>
+                    <input type="text" id="vstup1" value="PosledniTeplota" name="teplota">
+                    <input type="submit" value="Potvrdit" class="button" />
+                </td>
+                <td>
+                    @Html.ActionLink("Update", "Update", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>*@
+
+
+
+
 @*Zde bych chtěl 
 mít nastavnení zalívání info o tom jak to je.
 resp. 

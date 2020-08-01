@@ -13,8 +13,15 @@ namespace Smart_home.Models
     {
         public static string GetConnectionString(string connectionName = "Smart_home_Context")
         {
-            //online conector string: server=192.168.1.150;uid=db7190;pwd=!VASEHESLO!;database=db7190
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Db;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            //online conector string: 
+            //string connectionString = "Data Source = web1.aspfree.cz; Initial Catalog = db7197; Integrated Security = False; User ID = db7197; Connect Timeout = 15; Encrypt = False; Packet Size = 4096";
+            //string connectionString = "Data Source = 192.168.1.150; uid = db7197; pwd = kolotoc123; database = db7197";
+            
+            //??
+            //string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Db;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            
+            //notas
+            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=db1;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             return connectionString;
             //return ConfigurationManager.ConnectionStrings[connectionName].ConnectionString;
         }

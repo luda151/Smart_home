@@ -1,9 +1,13 @@
-﻿@{
+﻿@model Smart_home.Models.TestModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
-    <body>
-
+<body>
+    <form asp-controller="Home" asp-action="Check">
+        <input asp-for="X" type="number" value="5">
+        <button type="submit" >Potvrd</button>
         
 
-    </body>
+    </form>
+</body>

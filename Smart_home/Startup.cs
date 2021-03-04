@@ -1,14 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.FileProviders;
+using Microsoft.EntityFrameworkCore;
+using Smart_home.Data;
+using Smart_home.Service;
 
 namespace Smart_home
 {
@@ -25,6 +22,13 @@ namespace Smart_home
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            //services.AddScoped<IPrihlasenyUzivatelService, PrihlasenyUzivatelService>();
+            services.AddScoped<IulozDbService, ulozDbService>();
+
+            string mySqlConnectionStr = Configuration.GetConnectionString("Smart_homeContext");
+            services.AddDbContextPool<Smart_homeContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
+
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

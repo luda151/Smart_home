@@ -3,14 +3,14 @@
     ViewData["Title"] = "teplota";
 }
 
-<h1>teploměry</h1>
+<h1>Vytápění</h1>
 
 <table class="table">
     <thead>
         <tr>
             @*<th>
-                    Id
-                </th>*@
+            Id
+        </th>*@
             <th>
                 Místnost
             </th>
@@ -20,37 +20,38 @@
             <th>
                 Aktuální teplota
             </th>
-            @*<th>
-                Nastavení teploty
-            </th>*@
+            <th>
+                Nastavená teplota
+            </th>
+            <th>
+                Nastav Teplotu
+            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
-                @*<td>
-                        @Html.DisplayFor(modelItem => item.Id)
-                    </td>*@
-                <td>
-                    @Html.DisplayFor(modelItem => item.Mistnost)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Umisteni)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.NastavenaTeplota)
-                </td>
-                @*<td>
-                    <input type="text" id="vstup1" value="PosledniTeplota" name="teplota">
-                    <button name="button" value="button" asp-action="check">Potvrdit</button>
-                </td>*@
-                @*<td>
-                    @Html.ActionLink("Update", "Update", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                </td>*@
-            </tr>
+        <tr>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Mistnost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Umisteni)
+            </td>
+
+            <td>
+            <input type="text" id="vstup1" value="Jakou by si chtěl teplotu" name="teplota">
+            <button name="button" value="button" asp-action="check">Potvrdit</button>
+            </td>
+            @*<td>
+            @Html.ActionLink("Update", "Update", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>*@
+        </tr>
         }
     </tbody>
 </table>

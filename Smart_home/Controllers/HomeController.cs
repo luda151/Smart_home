@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Smart_home.Models;
+using System.Net.Http;
 using static Smart_home.Models.SqlDotazy;
 
 namespace Smart_home.Controllers
@@ -55,9 +55,18 @@ namespace Smart_home.Controllers
             return View(Teploty);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Termostat()
         {
-            return View();
+            TeplotaModel teplotaModel = new TeplotaModel();
+            teplotaModel.NactiTeplotu();
+            return View(teplotaModel);
+        }
+        [HttpPost]
+        public IActionResult Termostat(TeplotaModel teplotaModel)
+        {
+            teplotaModel.NactiTeplotu();
+            teplotaModel.NastavTeplotu();
+            return View(teplotaModel);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -65,5 +74,8 @@ namespace Smart_home.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-    }
+
+        //metoda slouzici k ziskani dat z url
+
+}
 }

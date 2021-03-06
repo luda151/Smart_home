@@ -51,34 +51,6 @@
           "lib/netstandard2.0/Json.Net.dll": {}
         }
       },
-      "Microsoft.AspNet.Razor/3.2.7": {
-        "type": "package",
-        "compile": {
-          "lib/net45/System.Web.Razor.dll": {}
-        },
-        "runtime": {
-          "lib/net45/System.Web.Razor.dll": {}
-        }
-      },
-      "Microsoft.AspNet.WebPages/3.2.7": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNet.Razor": "[3.2.7, 3.3.0)",
-          "Microsoft.Web.Infrastructure": "1.0.0"
-        },
-        "compile": {
-          "lib/net45/System.Web.Helpers.dll": {},
-          "lib/net45/System.Web.WebPages.Deployment.dll": {},
-          "lib/net45/System.Web.WebPages.Razor.dll": {},
-          "lib/net45/System.Web.WebPages.dll": {}
-        },
-        "runtime": {
-          "lib/net45/System.Web.Helpers.dll": {},
-          "lib/net45/System.Web.WebPages.Deployment.dll": {},
-          "lib/net45/System.Web.WebPages.Razor.dll": {},
-          "lib/net45/System.Web.WebPages.dll": {}
-        }
-      },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -956,15 +928,6 @@
         },
         "runtime": {
           "lib/net5.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
-        }
-      },
-      "Microsoft.Web.Infrastructure/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
         }
       },
       "Microsoft.Win32.Registry/4.7.0": {
@@ -2484,40 +2447,6 @@
         "json.net.1.0.25.nupkg.sha512",
         "json.net.nuspec",
         "lib/netstandard2.0/Json.Net.dll"
-      ]
-    },
-    "Microsoft.AspNet.Razor/3.2.7": {
-      "sha512": "BpWEZ+Ys7g9VAkbAfpG5jr5A1fKcmadCCXv3fYfps5YfTVABJIGV4uc9yvmXKxsNsjL+BzDld2gs+xtgT2gg1g==",
-      "type": "package",
-      "path": "microsoft.aspnet.razor/3.2.7",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/System.Web.Razor.dll",
-        "lib/net45/System.Web.Razor.xml",
-        "microsoft.aspnet.razor.3.2.7.nupkg.sha512",
-        "microsoft.aspnet.razor.nuspec"
-      ]
-    },
-    "Microsoft.AspNet.WebPages/3.2.7": {
-      "sha512": "2jwZFB7PvY+tbdz0ZP4iEo7gMrJxkCQUzoGLh6swUc6ZXl6DoKyDslmGcC/j9PFmJXCRMVIqtRorlPSMU2DuRA==",
-      "type": "package",
-      "path": "microsoft.aspnet.webpages/3.2.7",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Content/Web.config.install.xdt",
-        "Content/Web.config.uninstall.xdt",
-        "lib/net45/System.Web.Helpers.dll",
-        "lib/net45/System.Web.Helpers.xml",
-        "lib/net45/System.Web.WebPages.Deployment.dll",
-        "lib/net45/System.Web.WebPages.Deployment.xml",
-        "lib/net45/System.Web.WebPages.Razor.dll",
-        "lib/net45/System.Web.WebPages.Razor.xml",
-        "lib/net45/System.Web.WebPages.dll",
-        "lib/net45/System.Web.WebPages.xml",
-        "microsoft.aspnet.webpages.3.2.7.nupkg.sha512",
-        "microsoft.aspnet.webpages.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -4044,18 +3973,6 @@
         "lib/net5.0/bootstrap4_identitygeneratorfilesconfig.json",
         "microsoft.visualstudio.web.codegenerators.mvc.5.0.2.nupkg.sha512",
         "microsoft.visualstudio.web.codegenerators.mvc.nuspec"
-      ]
-    },
-    "Microsoft.Web.Infrastructure/1.0.0": {
-      "sha512": "FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
-      "type": "package",
-      "path": "microsoft.web.infrastructure/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/Microsoft.Web.Infrastructure.dll",
-        "microsoft.web.infrastructure.1.0.0.nupkg.sha512",
-        "microsoft.web.infrastructure.nuspec"
       ]
     },
     "Microsoft.Win32.Registry/4.7.0": {
@@ -8077,7 +7994,6 @@
       "Dapper >= 2.0.78",
       "EntityFramework >= 6.4.4",
       "Json.Net >= 1.0.25",
-      "Microsoft.AspNet.WebPages >= 3.2.7",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.3",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.3",
@@ -8089,7 +8005,8 @@
   },
   "packageFolders": {
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -8101,10 +8018,12 @@
       "outputPath": "C:\\Git\\Personal\\Smart_home\\Smart_home\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\ludek.bulicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -8142,10 +8061,6 @@
           "Json.Net": {
             "target": "Package",
             "version": "[1.0.25, )"
-          },
-          "Microsoft.AspNet.WebPages": {
-            "target": "Package",
-            "version": "[3.2.7, )"
           },
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
@@ -8196,40 +8111,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Balíček Microsoft.AspNet.Razor 3.2.7 se místo cílové verze rozhraní .NET Framework projektu net5.0 obnovil pomocí .NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8. Balíček nemusí být plně kompatibilní s vaším projektem.",
-      "libraryId": "Microsoft.AspNet.Razor",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Balíček Microsoft.AspNet.WebPages 3.2.7 se místo cílové verze rozhraní .NET Framework projektu net5.0 obnovil pomocí .NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8. Balíček nemusí být plně kompatibilní s vaším projektem.",
-      "libraryId": "Microsoft.AspNet.WebPages",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Balíček Microsoft.Web.Infrastructure 1.0.0 se místo cílové verze rozhraní .NET Framework projektu net5.0 obnovil pomocí .NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8. Balíček nemusí být plně kompatibilní s vaším projektem.",
-      "libraryId": "Microsoft.Web.Infrastructure",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }

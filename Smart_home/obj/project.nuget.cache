@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZiTy0ZtkVAnog5LJcbrOeWYul6FPy7HaPdINUAFccuIThyBeSisjtoFNyQ3grYzYPuYiqYi3YYsm0yyxjuj9gg==",
+  "dgSpecHash": "bVACg74wUFPJvAn3jnECs8thTDiaIBa5qNIOzrMD5ksN3nDTmKWnSh8KZq5yvWpRQOqpzfFe3YZ0x56d9rWi5w==",
   "success": true,
   "projectFilePath": "C:\\Git\\Personal\\Smart_home\\Smart_home\\Smart_home.csproj",
   "expectedPackageFiles": [
@@ -8,8 +8,6 @@
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\json.net\\1.0.25\\json.net.1.0.25.nupkg.sha512",
-    "C:\\Users\\ludek.bulicek\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.7\\microsoft.aspnet.razor.3.2.7.nupkg.sha512",
-    "C:\\Users\\ludek.bulicek\\.nuget\\packages\\microsoft.aspnet.webpages\\3.2.7\\microsoft.aspnet.webpages.3.2.7.nupkg.sha512",
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.3\\microsoft.aspnetcore.jsonpatch.5.0.3.nupkg.sha512",
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.3\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.3.nupkg.sha512",
@@ -63,7 +61,6 @@
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.templating\\5.0.2\\microsoft.visualstudio.web.codegeneration.templating.5.0.2.nupkg.sha512",
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.utils\\5.0.2\\microsoft.visualstudio.web.codegeneration.utils.5.0.2.nupkg.sha512",
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\5.0.2\\microsoft.visualstudio.web.codegenerators.mvc.5.0.2.nupkg.sha512",
-    "C:\\Users\\ludek.bulicek\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512",
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\mysqlconnector\\1.1.0\\mysqlconnector.1.1.0.nupkg.sha512",
@@ -155,36 +152,5 @@
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\ludek.bulicek\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Balíček Microsoft.AspNet.Razor 3.2.7 se místo cílové verze rozhraní .NET Framework projektu net5.0 obnovil pomocí .NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8. Balíček nemusí být plně kompatibilní s vaším projektem.",
-      "libraryId": "Microsoft.AspNet.Razor",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Balíček Microsoft.AspNet.WebPages 3.2.7 se místo cílové verze rozhraní .NET Framework projektu net5.0 obnovil pomocí .NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8. Balíček nemusí být plně kompatibilní s vaším projektem.",
-      "libraryId": "Microsoft.AspNet.WebPages",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Balíček Microsoft.Web.Infrastructure 1.0.0 se místo cílové verze rozhraní .NET Framework projektu net5.0 obnovil pomocí .NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8. Balíček nemusí být plně kompatibilní s vaším projektem.",
-      "libraryId": "Microsoft.Web.Infrastructure",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

@@ -9,7 +9,15 @@
       "DEBUG",
       "NET",
       "NET5_0",
-      "NETCOREAPP"
+      "NETCOREAPP",
+      "NET5_0_OR_GREATER",
+      "NETCOREAPP1_0_OR_GREATER",
+      "NETCOREAPP1_1_OR_GREATER",
+      "NETCOREAPP2_0_OR_GREATER",
+      "NETCOREAPP2_1_OR_GREATER",
+      "NETCOREAPP2_2_OR_GREATER",
+      "NETCOREAPP3_0_OR_GREATER",
+      "NETCOREAPP3_1_OR_GREATER"
     ],
     "languageVersion": "9.0",
     "platform": "",
@@ -28,7 +36,6 @@
           "Dapper": "2.0.78",
           "EntityFramework": "6.4.4",
           "Json.Net": "1.0.25",
-          "Microsoft.AspNet.WebPages": "3.2.7",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "5.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.3",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.3",
@@ -376,47 +383,6 @@
         },
         "compile": {
           "lib/netstandard2.0/Json.Net.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Razor/3.2.7": {
-        "runtime": {
-          "lib/net45/System.Web.Razor.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
-          }
-        },
-        "compile": {
-          "lib/net45/System.Web.Razor.dll": {}
-        }
-      },
-      "Microsoft.AspNet.WebPages/3.2.7": {
-        "dependencies": {
-          "Microsoft.AspNet.Razor": "3.2.7",
-          "Microsoft.Web.Infrastructure": "1.0.0"
-        },
-        "runtime": {
-          "lib/net45/System.Web.Helpers.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
-          },
-          "lib/net45/System.Web.WebPages.Deployment.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
-          },
-          "lib/net45/System.Web.WebPages.Razor.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
-          },
-          "lib/net45/System.Web.WebPages.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
-          }
-        },
-        "compile": {
-          "lib/net45/System.Web.Helpers.dll": {},
-          "lib/net45/System.Web.WebPages.Deployment.dll": {},
-          "lib/net45/System.Web.WebPages.Razor.dll": {},
-          "lib/net45/System.Web.WebPages.dll": {}
         }
       },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -1234,17 +1200,6 @@
         },
         "compile": {
           "lib/net5.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
-        }
-      },
-      "Microsoft.Web.Infrastructure/1.0.0": {
-        "runtime": {
-          "lib/net40/Microsoft.Web.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.20105.407"
-          }
-        },
-        "compile": {
-          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
         }
       },
       "Microsoft.Win32.Registry/4.7.0": {
@@ -3945,20 +3900,6 @@
       "path": "json.net/1.0.25",
       "hashPath": "json.net.1.0.25.nupkg.sha512"
     },
-    "Microsoft.AspNet.Razor/3.2.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-BpWEZ+Ys7g9VAkbAfpG5jr5A1fKcmadCCXv3fYfps5YfTVABJIGV4uc9yvmXKxsNsjL+BzDld2gs+xtgT2gg1g==",
-      "path": "microsoft.aspnet.razor/3.2.7",
-      "hashPath": "microsoft.aspnet.razor.3.2.7.nupkg.sha512"
-    },
-    "Microsoft.AspNet.WebPages/3.2.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2jwZFB7PvY+tbdz0ZP4iEo7gMrJxkCQUzoGLh6swUc6ZXl6DoKyDslmGcC/j9PFmJXCRMVIqtRorlPSMU2DuRA==",
-      "path": "microsoft.aspnet.webpages/3.2.7",
-      "hashPath": "microsoft.aspnet.webpages.3.2.7.nupkg.sha512"
-    },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -4329,13 +4270,6 @@
       "sha512": "sha512-W4Uk2y0oja+4E+XP5d5OFu+ViTEtlqm3a6nYuuC3tjA+lTK6dLaMf0G6WnO4BO18i0kM0l49XjTwwXd5XpjnAQ==",
       "path": "microsoft.visualstudio.web.codegenerators.mvc/5.0.2",
       "hashPath": "microsoft.visualstudio.web.codegenerators.mvc.5.0.2.nupkg.sha512"
-    },
-    "Microsoft.Web.Infrastructure/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
-      "path": "microsoft.web.infrastructure/1.0.0",
-      "hashPath": "microsoft.web.infrastructure.1.0.0.nupkg.sha512"
     },
     "Microsoft.Win32.Registry/4.7.0": {
       "type": "package",

@@ -7,8 +7,7 @@ using Smart_home.Controllers;
 using System.Threading.Tasks;
 using System.Configuration;
 using Smart_home.Service;
-
-
+using System;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -43,7 +42,8 @@ namespace Smart_home
         [HttpPost]
         public async Task<IActionResult> IndexAsync([FromBody] Teploty teploty)
         {
-            if(await _ulozDbService.ulozDoDBAsync(teploty))
+            teploty.cas = DateTime.Now.ToString("dd.MM.yyyy");
+            if (await _ulozDbService.ulozDoDBAsync(teploty))
             {
                 return Ok();
             }

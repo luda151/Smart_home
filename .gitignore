@@ -88,3 +88,4 @@ _[Ss]cripts
 *.cache
 *.cache
 DB/Database_SH/Database_SH.jfm
+*.jfm

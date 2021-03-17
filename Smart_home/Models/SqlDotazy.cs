@@ -54,13 +54,13 @@ namespace Smart_home.Models
         //    return DataAcces.SaveData(sql, data);
         //}
 
-        public static List<TeplotaModel> LoadTeplota()
+        public static List<Termostat> LoadTeplota()
         {
             string sql = @"SELECT IdTeplomeru, Mistnost, Umisteni, Date, PosledniTeplota
                           FROM dbo.Teploty
                           LEFT JOIN dbo.Teplomery
                           ON dbo.Teploty.IdTeplomeru = dbo.Teplomery.Id;";
-            return LoadData<TeplotaModel>(sql);
+            return LoadData<Termostat>(sql);
         }
 
 

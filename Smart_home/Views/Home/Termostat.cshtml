@@ -1,4 +1,4 @@
-﻿@model Smart_home.Models.TeplotaModel
+﻿@model Smart_home.Models.Termostat
 
 @{
     ViewData["Title"] = "Termostat";
@@ -7,12 +7,13 @@
 
 <form asp-action="Termostat">
     <div>
-        <p>Aktuální teplota: @Model.Teplot</p>
-        <p>Nastavená teplota: @Model.NastavenaTeplota</p>
+        <p>Aktuální teplota: @Model.PosledniTeplota</p>
+        <p>Nastavená teplota: @Model.ZadanaTeplota</p>
     </div>
     <div>
         <input asp-for="ZadanaTeplota">
     </div>
+    <br />
     <div>
         <input type="submit" value="Nastav" />
     </div>

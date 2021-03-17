@@ -1,22 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Smart_home.Models;
-using System.Net.Http;
-using static Smart_home.Models.SqlDotazy;
+using Smart_home.Service;
 
 namespace Smart_home.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IDbService _DbService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IDbService DbService)
         {
             _logger = logger;
+            _DbService = DbService;
         }
 
         public IActionResult Index()
@@ -35,37 +34,49 @@ namespace Smart_home.Controllers
             return View();
         }
 
-        public IActionResult Teplota()
-        {
-            var data = LoadTeplota();
-            List<TeplotaModel> Teploty = new List<TeplotaModel>();
+        //public IActionResult Teplota()
+        //{
+        //    var data = LoadTeplota();
+        //    List<TeplotaModel> Teploty = new List<TeplotaModel>();
 
-            foreach (var row in data)
-            {
-                    Teploty.Add(new TeplotaModel
-                {
-                        IdTeplomeru = row.IdTeplomeru,
-                        Date = row.Date,
-                        PosledniTeplota = row.PosledniTeplota,
-                        Mistnost = row.Mistnost,
-                        Umisteni = row.Umisteni,
-                        NovaTeplota = row.NovaTeplota
-                    });
-            }
-            return View(Teploty);
-        }
+        //    foreach (var row in data)
+        //    {
+        //        Teploty.Add(new TeplotaModel
+        //        {
+        //                IdTeplomeru = row.IdTeplomeru,
+        //                Date = row.Date,
+        //                PosledniTeplota = row.PosledniTeplota,
+        //                Mistnost = row.Mistnost,
+        //                Umisteni = row.Umisteni,
+        //                NovaTeplota = row.NovaTeplota
+        //            });
+        //    }
+        //    return View(Teploty);
+        //}
 
         public IActionResult Termostat()
         {
-            TeplotaModel teplotaModel = new TeplotaModel();
-            teplotaModel.NactiTeplotu();
+            Termostat teplotaModel = new Termostat();
+
+            Teploty teploty = _DbService.nactiZDbAsync();
+            teplotaModel.PosledniTeplota = teplotaModel.vratPosledniTeplotu(teploty);
+            teplotaModel.NastavenaTeplota = teplotaModel.vratNastavenouTeplotu(teploty);
+
             return View(teplotaModel);
         }
+
+        //public IActionResult Termostat(TeplotaModel teplotaModel)
+        //{
+
+        //    teplotaModel.PosledniTeplota = teplotaModel.vratPosledniTeplotu();
+        //    teplotaModel.NastavenaTeplota = teplotaModel.vratNastavenouTeplotu();
+        //    return View(teplotaModel);
+        //}
+
         [HttpPost]
-        public IActionResult Termostat(TeplotaModel teplotaModel)
+        public IActionResult Termostat(Termostat teplotaModel)
         {
-            teplotaModel.NactiTeplotu();
-            teplotaModel.NastavTeplotu();
+
             return View(teplotaModel);
         }
 

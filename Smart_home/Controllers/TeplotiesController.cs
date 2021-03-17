@@ -150,18 +150,5 @@ namespace Smart_home.Controllers
         {
             return _context.Teploty.Any(e => e.id == id);
         }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<bool> ZapisAsync([Bind("id,teplota,vlhkost,cas")] Teploty teploty)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(teploty);
-                await _context.SaveChangesAsync();
-                return true;
-            }
-            return false;
-        }
     }
 }

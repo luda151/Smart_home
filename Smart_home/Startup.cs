@@ -23,7 +23,7 @@ namespace Smart_home
         {
             services.AddControllersWithViews();
             //services.AddScoped<IPrihlasenyUzivatelService, PrihlasenyUzivatelService>();
-            services.AddScoped<IulozDbService, ulozDbService>();
+            services.AddScoped<IDbService, DbService>();
 
             string mySqlConnectionStr = Configuration.GetConnectionString("Smart_homeContext");
             services.AddDbContextPool<Smart_homeContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));

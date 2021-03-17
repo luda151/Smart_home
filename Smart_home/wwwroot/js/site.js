@@ -5,8 +5,8 @@
 
 //vypsani textu a provedeni funkci
   function myFunction() {
-  var checkBox = document.getElementById("myCheck");
-  var text = document.getElementById("text");
+      var checkBox = document.getElementById("myCheck", "myCheck1");
+      var text = document.getElementById("text", "text1");
   if (checkBox.checked == true){
         //todo zavolej zhasni svetlo
         text.style.display = "block";

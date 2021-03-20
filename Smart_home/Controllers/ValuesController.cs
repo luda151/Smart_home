@@ -8,7 +8,6 @@ using System;
 
 namespace Smart_home
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
@@ -20,11 +19,25 @@ namespace Smart_home
         }
 
         // POST api/<ValuesController>
+        [Route("api/[controller]")]
+        
         [HttpPost]
         public async Task<IActionResult> IndexAsync([FromBody] Teploty teploty)
         {
             teploty.cas = DateTime.Now.ToString("dd.MM.yyyy, HH:mm:ss");
             if (await _DbService.ulozDoDBAsync(teploty))
+            {
+                return Ok();
+            }
+            return BadRequest();
+        }
+
+        [Route("api/co2")]
+        [HttpPost]
+        public async Task<IActionResult> GetCo2Async([FromBody] Co2 co2)
+        {
+            co2.Cas = DateTime.Now.ToString("dd.MM.yyyy, HH:mm:ss");
+            if (await _DbService.ulozCo2DoDBAsync(co2))
             {
                 return Ok();
             }

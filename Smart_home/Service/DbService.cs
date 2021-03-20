@@ -49,5 +49,18 @@ namespace Smart_home.Service
                 .FirstOrDefault();
             return termostat;
         }
+        public async Task<bool> ulozCo2DoDBAsync(Co2 co2)
+        {
+            try
+            {
+                _context.Co2.Add(co2);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

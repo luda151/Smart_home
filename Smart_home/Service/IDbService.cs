@@ -13,5 +13,6 @@ namespace Smart_home.Service
         Teploty nactiZDbAsync();
 
         Termostat nactiTermostat();
+        Task<bool> ulozCo2DoDBAsync(Co2 co2);
     }
 }

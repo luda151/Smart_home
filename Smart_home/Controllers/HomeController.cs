@@ -34,26 +34,6 @@ namespace Smart_home.Controllers
             return View();
         }
 
-        //public IActionResult Teplota()
-        //{
-        //    var data = LoadTeplota();
-        //    List<TeplotaModel> Teploty = new List<TeplotaModel>();
-
-        //    foreach (var row in data)
-        //    {
-        //        Teploty.Add(new TeplotaModel
-        //        {
-        //                IdTeplomeru = row.IdTeplomeru,
-        //                Date = row.Date,
-        //                PosledniTeplota = row.PosledniTeplota,
-        //                Mistnost = row.Mistnost,
-        //                Umisteni = row.Umisteni,
-        //                NovaTeplota = row.NovaTeplota
-        //            });
-        //    }
-        //    return View(Teploty);
-        //}
-
         public IActionResult Termostat()
         {
             Termostat teplotaModel = new Termostat();
@@ -64,14 +44,6 @@ namespace Smart_home.Controllers
 
             return View(teplotaModel);
         }
-
-        //public IActionResult Termostat(TeplotaModel teplotaModel)
-        //{
-
-        //    teplotaModel.PosledniTeplota = teplotaModel.vratPosledniTeplotu();
-        //    teplotaModel.NastavenaTeplota = teplotaModel.vratNastavenouTeplotu();
-        //    return View(teplotaModel);
-        //}
 
         [HttpPost]
         public IActionResult Termostat(Termostat teplotaModel)
@@ -85,8 +57,5 @@ namespace Smart_home.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-        //metoda slouzici k ziskani dat z url
-
-}
+    }
 }

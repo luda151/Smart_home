@@ -15,6 +15,7 @@ namespace Smart_home.Data
 
         public DbSet<Teploty> Teploty { get; set; }
         public DbSet<Termostat> Termostat { get; set; }
+        public DbSet<Co2> Co2 { get; set; }
 
     }
 }

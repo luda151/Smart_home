@@ -28,17 +28,17 @@ namespace Smart_home.Service
                 return false;
             }
         }
-        public Teploty nactiZDbAsync()
+        public Teploty nactiZDb(Teploty teploty)
         {
             try
             {
-                Teploty teploty = _context.Teploty
-                .LastOrDefault();
+                teploty = _context.Teploty
+                    .OrderByDescending(c => c.id)
+                    .FirstOrDefault();
                 return teploty;
             }
             catch
             {
-                Teploty teploty;
                 teploty = null;
                 return teploty;
             }

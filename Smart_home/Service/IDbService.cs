@@ -10,7 +10,7 @@ namespace Smart_home.Service
     public interface IDbService
     {
         Task<bool> ulozDoDBAsync(Teploty teploty);
-        Teploty nactiZDbAsync();
+        Teploty nactiZDb(Teploty teploty);
 
         Termostat nactiTermostat();
         Task<bool> ulozCo2DoDBAsync(Co2 co2);

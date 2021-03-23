@@ -23,7 +23,11 @@ namespace Smart_home.Controllers
         // GET: Teploties
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Teploty.ToListAsync());
+            return View(await _context.Teploty
+                .OrderByDescending(c => c.id)
+                .Take(10)
+                .ToListAsync()
+                );
         }
 
         // GET: Teploties/Details/5

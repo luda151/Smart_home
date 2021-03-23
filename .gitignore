@@ -96,3 +96,6 @@ Smart_home/obj/project.assets.json
 Smart_home/obj/project.nuget.cache
 Smart_home/obj/Smart_home.csproj.nuget.dgspec.json
 Smart_home/obj/Smart_home.csproj.nuget.g.props
+Smart_home/Smart_home.csproj.user
+*.jfm
+Smart_home/Properties/PublishProfiles/FolderProfile.pubxml

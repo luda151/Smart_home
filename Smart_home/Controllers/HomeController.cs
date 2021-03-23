@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -36,11 +37,11 @@ namespace Smart_home.Controllers
 
         public IActionResult Termostat()
         {
-            Termostat teplotaModel = new Termostat();
-
-            Teploty teploty = _DbService.nactiZDbAsync();
-            teplotaModel.PosledniTeplota = teplotaModel.vratPosledniTeplotu(teploty);
-            teplotaModel.NastavenaTeplota = teplotaModel.vratNastavenouTeplotu(teploty);
+            Termostat teplotaModel = new();
+            Teploty teploty = new();
+            teploty = _DbService.nactiZDb(teploty);
+            teplotaModel.PosledniTeplota = teploty.teplota;
+            //teplotaModel.NastavenaTeplota = teploty.vratNastavenouTeplotu(teploty);
 
             return View(teplotaModel);
         }

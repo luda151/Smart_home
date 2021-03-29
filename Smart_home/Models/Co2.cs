@@ -17,29 +17,9 @@ namespace Smart_home.Models
         public string Raw10 { get; set; }
         public string Odpor { get; set; }
 
-        private IDbService _ulozDbService;
-
-        public Co2(IDbService ulozDbService)
-        {
-            _ulozDbService = ulozDbService;
-        }
-
         public Co2()
         {
         }
 
-        public string vratPosledniHodnotu(Co2 co2)
-        {
-            try
-            {
-                Eco2 = co2.Eco2;
-            }
-            catch
-            {
-                Eco2 = "400";
-            }
-            
-            return Eco2;
-        }
     }
 }

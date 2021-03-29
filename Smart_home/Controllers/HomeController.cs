@@ -46,6 +46,13 @@ namespace Smart_home.Controllers
             return View(teplotaModel);
         }
 
+        public IActionResult Co2()
+        {
+            Co2 co2 = new();
+            co2 = _DbService.nactiZDb2(co2);
+            return View(co2);
+        }
+
         public IActionResult Zvonek()
         {
             return View();

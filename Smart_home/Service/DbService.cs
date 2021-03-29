@@ -43,6 +43,22 @@ namespace Smart_home.Service
                 return teploty;
             }
         }
+
+        public Co2 nactiZDb2(Co2 co2)
+        {
+            try
+            {
+                co2 = _context.Co2
+                    .OrderByDescending(c => c.Id)
+                    .FirstOrDefault();
+                return co2;
+            }
+            catch
+            {
+                co2 = null;
+                return co2;
+            }
+        }
         public Termostat nactiTermostat()
         {
             Termostat termostat = _context.Termostat

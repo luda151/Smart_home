@@ -113,3 +113,14 @@ Smart_home/obj/project.nuget.cache
 Smart_home/obj/Smart_home.csproj.nuget.dgspec.json
 Smart_home/obj/Smart_home.csproj.nuget.g.props
 Smart_home/Properties/PublishProfiles/FolderProfile.pubxml
+Smart_home/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+Smart_home/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll
+Smart_home/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+Smart_home/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+Smart_home/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+Smart_home/bin/Debug/net5.0/ref/Smart_home.dll
+Smart_home/bin/Debug/net5.0/Smart_home.deps.json
+Smart_home/bin/Debug/net5.0/Smart_home.dll
+Smart_home/bin/Debug/net5.0/Smart_home.pdb
+Smart_home/bin/Debug/net5.0/Smart_home.Views.dll
+Smart_home/bin/Debug/net5.0/Smart_home.Views.pdb

@@ -46,12 +46,27 @@ namespace Smart_home.Controllers
             return View(teplotaModel);
         }
 
-        [HttpPost]
-        public IActionResult Termostat(Termostat teplotaModel)
+        public IActionResult Zvonek()
         {
-
-            return View(teplotaModel);
+            return View();
         }
+
+        public IActionResult Pocasi()
+        {
+            return View();
+        }
+
+        public IActionResult Zabezpeceni()
+        {
+            return View();
+        }
+
+        //[HttpPost]
+        //public IActionResult Termostat(Termostat teplotaModel)
+        //{
+
+        //    return View(teplotaModel);
+        //}
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

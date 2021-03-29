@@ -3,7 +3,52 @@
     ViewData["Title"] = "zabezpeceni";
 }
 
-<h1>zabezpeceni</h1>
+<h1>Zabezpečení</h1>
+<table class="table">
+    <thead>
+        <tr>
+            @*<th>
+            Id
+        </th>*@
+            <th>
+                Místnost
+            </th>
+            <th>
+                Umístění
+            </th>
+            <th>
+                Poslední změna
+            </th>
+            <th>
+                Stav
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @*@foreach (var item in Model)*@
+        @*{*@
+            <tr>
+                <td>
+                    Ložnice
+                </td>
+                <td>
+                   Okno do ulice
+                </td>
+                <td>
+                   29.03.2021, 22:31:25
+                </td>
+                <td>
+                    zavřeno
+                </td>
+                @*<td>
+                        @Html.ActionLink("Update", "Update", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    </td>*@
+            </tr>
+        @*}*@
+    </tbody>
+</table>
 
 @* zobrazeni cidel repsektive dveře okna a podobně
 dále by tu měla být historie dle možností.*@

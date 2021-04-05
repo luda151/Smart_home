@@ -1,0 +1,23 @@
+﻿@model Smart_home.Models.Co2
+@{
+    ViewData["Title"] = "Co2";
+}
+
+<h1>Co2</h1>
+
+<div>
+    <p>Poslední Údaj: @Model.Cas</p>
+    <p>Co2: @Model.Eco2 ppt</p>
+    <p>Etvoc: @Model.Etvoc ppm</p>
+</div>
+
+<body>
+    <form>
+        <div>
+
+            <a asp-controller="Co2" asp-action="Index">Databáze Co2</a>
+        </div>
+    </form>
+</body>
+
+

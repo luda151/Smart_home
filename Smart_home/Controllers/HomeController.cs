@@ -46,12 +46,34 @@ namespace Smart_home.Controllers
             return View(teplotaModel);
         }
 
-        [HttpPost]
-        public IActionResult Termostat(Termostat teplotaModel)
+        public IActionResult Co2()
         {
-
-            return View(teplotaModel);
+            Co2 co2 = new();
+            co2 = _DbService.nactiZDb2(co2);
+            return View(co2);
         }
+
+        public IActionResult Zvonek()
+        {
+            return View();
+        }
+
+        public IActionResult Pocasi()
+        {
+            return View();
+        }
+
+        public IActionResult Zabezpeceni()
+        {
+            return View();
+        }
+
+        //[HttpPost]
+        //public IActionResult Termostat(Termostat teplotaModel)
+        //{
+
+        //    return View(teplotaModel);
+        //}
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

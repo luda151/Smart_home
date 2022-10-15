@@ -8004,35 +8004,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ludek.bulicek\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Ludek\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\Personal\\Smart_home\\Smart_home\\Smart_home.csproj",
+      "projectUniqueName": "D:\\GIT\\Smart_home\\Smart_home\\Smart_home.csproj",
       "projectName": "Smart_home",
-      "projectPath": "C:\\Git\\Personal\\Smart_home\\Smart_home\\Smart_home.csproj",
-      "packagesPath": "C:\\Users\\ludek.bulicek\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\Personal\\Smart_home\\Smart_home\\obj\\",
+      "projectPath": "D:\\GIT\\Smart_home\\Smart_home\\Smart_home.csproj",
+      "packagesPath": "C:\\Users\\Ludek\\.nuget\\packages\\",
+      "outputPath": "D:\\GIT\\Smart_home\\Smart_home\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ludek.bulicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ludek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\src": {},
-        "http://nexus/repository/eGOV-nuget": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8112,7 +8108,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
